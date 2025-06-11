@@ -24,6 +24,11 @@
                         <button type="submit">اكتملت</button>
                     </form>
                     <!-- #region  TODO : اضافة زر تعديل مهمة -->
+                    <form method="post" asp-action="EditTask" style="display:inline; margin-right:10px;">
+                        <input type="hidden" name="id" value="@task.Id" />
+                        <input type="text" name="newTitle" placeholder="عنوان جديد" />
+                        <button type="submit">تعديل</button>
+                    </form>
                 }
             </li>
         }
